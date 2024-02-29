@@ -1,0 +1,84 @@
+.top-nav--container {
+    background: #fff;
+    border-bottom: 2px solid #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .05);
+}
+
+.nav-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.top-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-item {
+    height: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 30px;
+    cursor: pointer;
+    margin-right: 40px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-item:hover {
+    color: #FF0000;
+}
+
+.nav-item.active {
+    color: #FF0000;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
+    box-sizing: border-box;
+    margin-right: 24px;
+    background-color: #FF0000;
+    border-radius: 6px;
+}
+
+.login-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.login-button:hover {
+    color: #FF0000;
+}
+
+.line {
+    width: 1px;
+    height: 14px;
+    background: #020202;
+    margin: 0 10px;
+}

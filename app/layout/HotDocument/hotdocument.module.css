@@ -1,0 +1,85 @@
+.container {
+    width: 70%;
+    padding: 12px 24px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-right: 24px;
+}
+
+.tab-buttons {
+    display: flex;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ededed;
+}
+
+.tab-buttons .tab-button {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8D8D8D;
+    cursor: pointer;
+    margin-right: 24px;
+    transition: color 0.2s ease-in-out;
+}
+
+.tab-buttons .tab-button:hover,
+.tab-buttons .tab-button.active:hover {
+    color: #FF0000;
+}
+
+.tab-buttons .tab-button.active {
+    color: #333333;
+    position: relative;
+}
+
+.tab-buttons .tab-button.active::after {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 4px;
+    background-color: #FF0000;
+    left: 0;
+    bottom: -12px;
+}
+
+.tab-content-container {
+    margin-top: 24px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.doc-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.doc-info p {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.doc-info:hover p {
+    color: #FF0000;
+}
+
+.doc-info .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url('/images/word@2x.png') no-repeat center center;
+    background-size: cover;
+    margin-right: 6px;
+}

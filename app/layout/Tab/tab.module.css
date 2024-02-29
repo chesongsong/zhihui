@@ -1,0 +1,30 @@
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.bottom {
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 30px;
+}
+
+.filter-item {
+    cursor: pointer;
+    padding: 3px 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.filter-item.active {
+    background: #FF0000;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}

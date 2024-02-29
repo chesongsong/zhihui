@@ -1,0 +1,33 @@
+.breadcrumbs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.home-icon {
+    height: 18px;
+    width: 18px;
+    display: inline-block;
+    background: url('/images/shouye2@2x.png') no-repeat center center;
+    background-size: cover;
+    margin-right: 6px;
+}
+
+.breadcrumbs-item-name {
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 22px;
+
+}
+
+.arrow {
+    font-weight: 400;
+    font-size: 12px;
+    color: #666666;
+    line-height: 22px;
+    margin: 0 10px;
+}

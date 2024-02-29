@@ -1,0 +1,75 @@
+.left-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    margin: 24px 0;
+}
+
+
+.header {
+    width: 186px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #333333;
+    background: url('/images/biaoti@2x.png') no-repeat center center;
+    background-size: cover;
+    margin-right: 24px;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tab-button {
+    padding: 10px 26px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 25px;
+    margin-right: 14px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: #FDE9E9;
+}
+
+.more {
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.tab-content-container.active {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.title:hover {
+    color: #FF0000;
+}
+
+.tab-content-container {
+    display: none;
+    cursor: pointer;
+}

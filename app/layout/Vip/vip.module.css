@@ -1,0 +1,153 @@
+.container {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+    height: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.bg-icon-top {
+    position: absolute;
+    background: url('/images/bg1@2x.png') no-repeat center center;
+    background-size: cover;
+    width: 26px;
+    height: 24px;
+    top: 18px;
+    left: 14px;
+}
+
+.bg-icon-bottom {
+    position: absolute;
+    background: url('/images/bg2@2x.png') no-repeat center center;
+    background-size: cover;
+    width: 38px;
+    height: 15px;
+    bottom: 12px;
+    right: 24px;
+}
+
+.inner-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.mate-item {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-size: 16px;
+
+    font-weight: 400;
+    color: #333333;
+
+}
+
+.mate-item-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-left: 10px;
+}
+
+.be-vip {
+    width: 206px;
+    height: 53px;
+    background: linear-gradient(270deg, #FDBC4E 0%, #FFD592 100%);
+    border-radius: 27px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #6E3F00;
+    text-align: center;
+    line-height: 53px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.equity {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.equity::before,
+.equity::after {
+    position: absolute;
+    content: '';
+    width: 48px;
+    height: 1px;
+    background-color: #eeeeee;
+    bottom: 50%;
+}
+
+.equity::before {
+    left: -56px;
+}
+
+.equity::after {
+    right: -56px;
+}
+
+.equity-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.equity-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.equity-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.equity-item-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 12px;
+}
+
+.equity-item-icon-0 {
+    background: url('/images/quanyi1@2x.png') no-repeat center center;
+    background-size: cover;
+}
+
+.equity-item-icon-1 {
+    background: url('/images/quanyi2@2x.png') no-repeat center center;
+    background-size: cover;
+}
+
+.equity-item-icon-2 {
+    background: url('/images/quanyi3@2x.png') no-repeat center center;
+    background-size: cover;
+}
+
+.equity-item-icon-3 {
+    background: url('/images/quanyi4@2x.png') no-repeat center center;
+    background-size: cover;
+}

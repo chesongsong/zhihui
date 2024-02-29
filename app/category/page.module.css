@@ -1,0 +1,14 @@
+.main {
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 1230px;
+    margin: 0 auto;
+  }
+  
+  .hot-container {
+    display: flex;
+    height: 290px;
+    margin-top: 16px;
+  }
