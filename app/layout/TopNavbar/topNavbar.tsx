@@ -1,10 +1,15 @@
 'use client'
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import styles from './topNavbar.module.css'
 import classNames from 'classnames';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { Avatar, } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
+import { GlobalContext } from '@/app/context';
+
+
 
 const navItems = [
     '首页',
@@ -18,6 +23,7 @@ const navItems = [
 function TopNavbar() {
     // 点击选中的索引
     const [activeNavIndex, setActiveNavIndex] = useState(0);
+    const { setShowLoadingModal, showLoginModal } = useContext(GlobalContext)
     const router = useRouter();
 
     const handleNavItemClick = (index: number) => {
@@ -46,11 +52,7 @@ function TopNavbar() {
                         ))}
                     </div>
                 </div>
-                <div className={styles['login-action']}>
-                    <span className={styles['login-button']}>登录</span>
-                    <span className={styles.line}></span>
-                    <span className={styles['login-button']}>注册</span>
-                </div>
+                <Avatar style={{ cursor: 'pointer' }} shape="square" size={32} icon={<UserOutlined />} onClick={() => setShowLoadingModal(true)} />
             </div>
         </div>
     );
